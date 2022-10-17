@@ -37,5 +37,5 @@ module.exports = {
     //   NODE_ENV: "production",
     // }),
   ],
-  mode: "production",
+  mode: process.env.NODE_ENV === "production" ? "production" : "development",
 };
